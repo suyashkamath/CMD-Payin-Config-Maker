@@ -1,0 +1,9 @@
+[
+  { "product_id": 1, "product_name": "HEALTH" },
+  { "product_id": 2, "product_name": "MOTOR" },
+  { "product_id": 3, "product_name": "TRAVEL" },
+  { "product_id": 4, "product_name": "SME" },
+  { "product_id": 5, "product_name": "LIFE" },
+  { "product_id": 6, "product_name": "MISCELLANEOUS" },
+  { "product_id": 7, "product_name": "Rural Agri" }
+]

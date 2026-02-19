@@ -1,0 +1,7 @@
+[
+  { "business_type_id": -1, "business_type_name": "Not Considered" },
+  { "business_type_id": 1, "business_type_name": "New" },
+  { "business_type_id": 2, "business_type_name": "Renew" },
+  { "business_type_id": 3, "business_type_name": "Rollover" },
+  { "business_type_id": 4, "business_type_name": "Rollover-Renew" }
+]

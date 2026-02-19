@@ -1,0 +1,27 @@
+[
+    {
+      "sub_product_id": 1,
+      "sub_product_name": "Two Wheeler"
+    },
+    {
+      "sub_product_id": 2,
+      "sub_product_name": "Private Car"
+    },
+    {
+      "sub_product_id": 9,
+      "sub_product_name": "Passenger Vehicle"
+    },
+    {
+      "sub_product_id": 10,
+      "sub_product_name": "Goods Vehicle"
+    },
+    {
+      "sub_product_id": 17,
+      "sub_product_name": "Miscellaneous Vehicle"
+    },
+    {
+      "sub_product_id": 42,
+      "sub_product_name": "Standalone CPA"
+    }
+  ]
+

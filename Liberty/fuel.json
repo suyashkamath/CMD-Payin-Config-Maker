@@ -1,0 +1,6 @@
+[
+  { "fuel_type_id": 1, "fuel_type_name": "DIESEL" },
+  { "fuel_type_id": 2, "fuel_type_name": "PETROL" },
+  { "fuel_type_id": 3, "fuel_type_name": "ELECTRIC" },
+  { "fuel_type_id": 4, "fuel_type_name": "CNG-LPG" }
+]
