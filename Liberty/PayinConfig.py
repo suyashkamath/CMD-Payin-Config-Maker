@@ -386,7 +386,7 @@ def get_vehicle_type_id(lob, tw_type):
     sub_prod = lob_map.get(lob, lob)
     if sub_prod == 'Two Wheeler':
         if tw_type and 'bike' in str(tw_type).lower():
-            return 18  # TW Bike
+            return  18  # TW Bike
         elif tw_type and 'scooter' in str(tw_type).lower():
             return 17  # TW Scooter
     return -1
@@ -431,7 +431,7 @@ for idx, row in df.iterrows():
         if isinstance(v, str):
             v = v.strip().replace('%', '')
             try:
-                return float(v) 
+                return float(v)
             except:
                 return 0.0
         try:
@@ -484,7 +484,8 @@ for idx, row in df.iterrows():
         'eff_to_date': '2026-01-16',
         'fuel_type_id': -1,
         'fuel_type': '',
-        'is_on_net': False,
+        # 'is_on_net': False,
+        'is_on_net': True if policy_type == 'COMP' else False,
         'is_one_year_pay_on_newbusiness': -1,
         'is_cpa_included': -1,
         'is_geared_vehicle': is_geared,
@@ -547,8 +548,17 @@ col_order = [
 ]
 out_df = out_df[col_order]
 
+# output_path = os.path.join(output_folder, f'PayinConfig_{comp_code}_TW.xlsx')
+# out_df.to_excel(output_path, index=False)
 output_path = os.path.join(output_folder, f'PayinConfig_{comp_code}_TW.xlsx')
+
+if os.path.exists(output_path):
+    existing_df = pd.read_excel(output_path)
+    out_df = pd.concat([existing_df, out_df], ignore_index=True)
+    print(f"\n✓ Appended to existing file!")
+
 out_df.to_excel(output_path, index=False)
+
 print(f"\n✓ Output saved: {output_path}")
 print(f"  Total records: {len(out_df)}")
 print("\nSample (first 3 rows):")
